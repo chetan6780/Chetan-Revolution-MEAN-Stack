@@ -50,5 +50,5 @@ nodemon
 ```
 ng serve
 ```
-
-### Happy Coding!
+## You can watch [MEAN stack workshop Playlist](https://www.youtube.com/playlist?list=PLlZwC3ux9MSPXt7F2FyPLLhIb5JKnrEec) by Revolution-SDC
+## Happy Coding!

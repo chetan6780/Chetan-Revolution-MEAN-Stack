@@ -8,7 +8,6 @@
         <button data-toggle="modal" data-target="#exampleModal" class="btn btn-primary add-note-btn">Add Note</button>
     </div>
 
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -35,12 +34,13 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button (click)="addNewNote()" type="button" class="btn btn-primary">Submit</button>
+                            <button (click)="addNewNote()" type="button" data-dismiss="modal"
+                                class="btn btn-primary">Submit</button>
                         </div>
                     </form>
                     <!-- Form -->
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
@@ -49,13 +49,17 @@
     <div class="p-4"></div>
     <p class="h3 text-center">Your Notes</p>
     <hr>
-    <div class="container">
-        <div class="card text-white bg-info m-5 p-5 col-sm" *ngFor="let note of notes">
-            <div class="card-header">{{note.title}}</div>
+   
+
+    <!-- ---------------------------------------------------------------- -->
+    <div class="card-columns">
+        <div class="card text-center border-primary my-2 mb-5" *ngFor="let note of notes">
+            <h5 class="card-header">{{note.title}}</h5>
             <div class="card-body">
-                <p class="card-text">{{note.description}}</p>
+                <p class="card-text p-3">{{note.description}} </p>
+                <p class="card-text btn btn-danger mb-0" (click)="deleteNote(note)">Delete</p>
             </div>
-            <button (click)="deleteNote(note)" class="btn btn-danger">Delete</button>
         </div>
     </div>
+
 </div>

@@ -11,9 +11,11 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HistoryComponent } from './components/history/history.component';
 
 const routes: Routes=[
   {path: '', component: HomeComponent},
+  {path: 'history', component: HistoryComponent},
   // here we can add more
 ]
 
@@ -21,7 +23,8 @@ const routes: Routes=[
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

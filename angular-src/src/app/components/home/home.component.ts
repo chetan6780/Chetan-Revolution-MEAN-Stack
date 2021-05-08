@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   title: string;
   description: string;
   notes = [];
-
+  done_notes=[]
 
   constructor(
     private authService: AuthService
@@ -62,6 +62,7 @@ export class HomeComponent implements OnInit {
     // HTTP: Delete
     this.authService.deleteNoteRequest(note).subscribe((data) => {
       if (data.success) {
+        this.done_notes.push(note);
         this.refreshNotesList();
       } else {
         console.log(data.message);

@@ -50,5 +50,6 @@ nodemon
 ```
 ng serve
 ```
+![screencapture-localhost-4200-2021-12-02-21_50_22](https://user-images.githubusercontent.com/62825092/144461293-4314440e-ef0c-4313-8c59-6eaaa6a178b4.png)
 ## You can watch [MEAN stack workshop Playlist](https://www.youtube.com/playlist?list=PLlZwC3ux9MSPXt7F2FyPLLhIb5JKnrEec) by Revolution-SDC.
 ## Happy Coding!
